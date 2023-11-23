@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --poppins: 'Poppins';
+
+    --red: #BB2832;
+    --white: #FFF;
+    --gray: #999;
+    --black: #212529;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px;
+    height: 80px;
+}
+
+.header figure {
+    margin: 0px 0px;
+}
+
+.menu img {
+    width: 30px;
+    height: 24px;
+}
+
+.logo img {
+    object-fit: contain;
+    object-position: center;
+    width: 140px;
+    height: 57px;
+}
+
+.search img {
+    width: 24px;
+    height: 24px;
+}
+
+.header {
+    height: 80px;
+}
+
+.nav-bar {
+    text-align: center;
+    font-family: var(--poppins);
+    background: var(--red);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar h3 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 13px;
+}
+
+.nav-bar ul{
+    margin-top: 8px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+.nav-bar .active::after{
+    content: ' ';
+    width: 55px;
+    height: 2px;
+    display: block;
+    background-color: var(--white);
+}
+
+.top-nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 37px;
+    text-align: center;
+}
+
+.top-nav a{
+    text-decoration: none;
+    font-family: var(--poppins);
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: var(--red);
+}
+
+.top-nav a.active{
+    color: var(--gray);
+}
+
+/*======================== Regra de Grid ====================================*/
+.main{
+    max-width: 820px;
+    margin: 0 auto;
+    display: block;
+}
+
+.title-acordion h1{
+    color: #212529;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+    font-family: var(--poppins);
+}
