@@ -7,6 +7,8 @@
     --white: #FFF;
     --gray: #999;
     --black: #212529;
+    --darkgray: #707070;
+    --colormain: #272727;
 }
 
 .header ul {
@@ -63,7 +65,7 @@
     margin-top: 13px;
 }
 
-.nav-bar ul{
+.nav-bar ul {
     margin-top: 8px;
     list-style: none;
     display: flex;
@@ -78,7 +80,7 @@
     font-size: 16px;
 }
 
-.nav-bar .active::after{
+.nav-bar .active::after {
     content: ' ';
     width: 55px;
     height: 2px;
@@ -86,7 +88,7 @@
     background-color: var(--white);
 }
 
-.top-nav ul{
+.top-nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -94,9 +96,10 @@
     gap: 10px;
     margin-top: 37px;
     text-align: center;
+    padding: 0;
 }
 
-.top-nav a{
+.top-nav a {
     text-decoration: none;
     font-family: var(--poppins);
     font-size: 14px;
@@ -105,21 +108,70 @@
     color: var(--red);
 }
 
-.top-nav a.active{
+.top-nav a.active {
     color: var(--gray);
 }
 
 /*======================== Regra de Grid ====================================*/
-.main{
+.main {
     max-width: 820px;
     margin: 0 auto;
     display: block;
 }
 
-.title-acordion h1{
-    color: #212529;
+.title-acordion h1 {
+    color: var(--black);
     font-size: 30px;
     line-height: 32px;
     font-weight: 700;
     font-family: var(--poppins);
+    margin-bottom: 57px;
+}
+
+.title-acordion h1::before {
+    content: ' ';
+    width: 62px;
+    height: 5px;
+    background-color: var(--red);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.accordion h3 {
+    border-top: 1px solid var(--darkgray);
+    padding-top: 21px;
+    padding-bottom: 21px;
+    position: relative;
+    color: var(--colormain);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    font-family: var(--poppins);
+}
+
+.accordion h3:last-of-type{
+    border-bottom: 1px solid var(--darkgray);;
+}
+
+.accordion h3.ui-state-active{
+    color: var(--red);
+}
+
+.ui-icon-circle-arrow-e{
+    background-image: url('./images/plus.svg');
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+
+.ui-icon-circle-arrow-s{
+    background-image: url('./images/less.svg');
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
 }
