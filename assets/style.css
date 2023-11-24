@@ -261,6 +261,7 @@ ul {
 }
 
 .footer{
+    margin-top: 100px;
     background-color: var(--red);
     height: 114px;
 }
