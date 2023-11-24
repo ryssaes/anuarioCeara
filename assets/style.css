@@ -112,7 +112,6 @@
     color: var(--gray);
 }
 
-/*======================== Regra de Grid ====================================*/
 .main {
     max-width: 820px;
     margin: 0 auto;
@@ -149,15 +148,16 @@
     font-family: var(--poppins);
 }
 
-.accordion h3:last-of-type{
-    border-bottom: 1px solid var(--darkgray);;
+.accordion h3:last-of-type {
+    border-bottom: 1px solid var(--darkgray);
+    ;
 }
 
-.accordion h3.ui-state-active{
+.accordion h3.ui-state-active {
     color: var(--red);
 }
 
-.ui-icon-circle-arrow-e{
+.ui-icon-circle-arrow-e {
     background-image: url('./images/plus.svg');
     display: inline-block;
     width: 20px;
@@ -166,7 +166,7 @@
 }
 
 
-.ui-icon-circle-arrow-s{
+.ui-icon-circle-arrow-s {
     background-image: url('./images/less.svg');
     background-size: contain;
     background-position: center;
@@ -174,4 +174,31 @@
     width: 20px;
     height: 20px;
     margin-right: 20px;
+}
+
+.footer-socials{
+    background-color: var(--red);
+    height: 149px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.footer-socials h5{
+    padding-top: 36px;
+    color: var(--white);
+    font-family: var(--poppins);
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.footer-socials ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    padding-top: 20px;
 }
