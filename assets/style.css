@@ -82,6 +82,14 @@
     font-size: 16px;
 }
 
+.nav-bar li:hover{
+    border-bottom: 2px solid white;
+}
+
+.nav-bar .active:hover{
+    border-bottom: none;
+}
+
 .nav-bar .active::after {
     content: ' ';
     width: 55px;
