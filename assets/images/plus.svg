@@ -1,12 +1,16 @@
 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="SVG" clip-path="url(#clip0_1_26)">
-<path id="Elipse 323" d="M10 20.11C15.5228 20.11 20 15.6328 20 10.11C20 4.58714 15.5228 0.109985 10 0.109985C4.47715 0.109985 0 4.58714 0 10.11C0 15.6328 4.47715 20.11 10 20.11Z" fill="#272727"/>
-<path id="Linha 1412" d="M5.16721 10.11H14.832" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
-<path id="Linha 1413" d="M10 5.27719V14.942" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
-</g>
-<defs>
-<clipPath id="clip0_1_26">
-<rect width="20" height="20" fill="white" transform="translate(0 0.109985)"/>
-</clipPath>
-</defs>
+    <g id="SVG" clip-path="url(#clip0_1_26)">
+        <path id="Elipse 323"
+            d="M10 20.11C15.5228 20.11 20 15.6328 20 10.11C20 4.58714 15.5228 0.109985 10 0.109985C4.47715 0.109985 0 4.58714 0 10.11C0 15.6328 4.47715 20.11 10 20.11Z"
+            fill="#272727" />
+        <path id="Linha 1412" d="M5.16721 10.11H14.832" stroke="white" stroke-width="1.6"
+            stroke-linecap="round" />
+        <path id="Linha 1413" d="M10 5.27719V14.942" stroke="white" stroke-width="1.6"
+            stroke-linecap="round" />
+    </g>
+    <defs>
+        <clipPath id="clip0_1_26">
+            <rect width="20" height="20" fill="white" transform="translate(0 0.109985)" />
+        </clipPath>
+    </defs>
 </svg>

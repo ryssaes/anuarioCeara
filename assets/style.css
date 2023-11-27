@@ -9,6 +9,7 @@
     --black: #212529;
     --darkgray: #707070;
     --colormain: #272727;
+    --vertical-menu: #005C6F;
 }
 
 .header ul {
@@ -119,7 +120,7 @@
     display: block;
 }
 
-.accordion img {
+#accordion img {
     width: 100%;
     height: auto;
 }
@@ -142,7 +143,7 @@
     margin-bottom: 10px;
 }
 
-.accordion h3 {
+#accordion h3 {
     border-top: 1px solid var(--darkgray);
     padding-top: 21px;
     padding-bottom: 21px;
@@ -164,16 +165,16 @@
 }
 
 
-.accordion h3:last-of-type {
+#accordion h3:last-of-type {
     border-bottom: 1px solid var(--darkgray);
     ;
 }
 
-.accordion h3.ui-state-active {
+#accordion h3.ui-state-active {
     color: var(--red);
 }
 
-.ui-icon-circle-arrow-e {
+#accordion .ui-icon-circle-arrow-e {
     background-image: url('./images/plus.svg');
     display: inline-block;
     width: 20px;
@@ -182,7 +183,7 @@
 }
 
 
-.ui-icon-circle-arrow-s {
+#accordion .ui-icon-circle-arrow-s {
     background-image: url('./images/less.svg');
     background-size: contain;
     background-position: center;
@@ -306,7 +307,38 @@ ul {
     font-weight: 500;
 }
 
+@media screen and (min-width: 2000px){
+    #accordion2 ul {
+        padding-left: 6% !important;
+    }
+}
+
+@media screen and (max-width: 1670px){
+    #accordion2 ul {
+        padding-left: 10% !important;
+    }
+}
+
+@media screen and (max-width: 1490px){
+    .vertical-menu {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .vertical-menu {
+        width: 60% !important;
+    }
+    #accordion2 ul {
+        padding-left: 9% !important;
+    }
+}
+
 @media screen and (max-width: 1050px) {
+    .vertical-menu {
+        width: 70% !important;
+    }
+    
     .info {
         display: none;
     }
@@ -328,6 +360,10 @@ ul {
 }
 
 @media screen and (max-width: 970px) {
+    #accordion2 ul {
+        padding-left: 10% !important;
+    }
+    
     .nav-bar {
         height: 55px;
     }
@@ -337,7 +373,25 @@ ul {
     }
 }
 
+@media screen and (max-width: 768px){
+    #accordion2 ul {
+        padding-left: 12% !important;
+    }
+
+    .vertical-menu {
+        width: 76% !important;
+    }
+}
+
 @media screen and (max-width: 510px) {
+    #accordion2 ul {
+        padding-left: 17% !important;
+    }
+
+    .vertical-menu {
+        width: 100% !important;
+    }
+    
     .footer ul {
         float: none;
     }
@@ -359,7 +413,7 @@ ul {
         padding: 0;
     }
 
-    .footer-socials ul{
+    .footer-socials ul {
         padding-top: 0;
     }
 }
@@ -368,4 +422,111 @@ ul {
     .footer figure {
         display: none;
     }
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu img {
+    cursor: pointer;
+}
+
+.vertical-menu {
+    position: fixed;
+    top: 0;
+    left: -40%;
+    width: 40%;
+    height: 100%;
+    background-color: var(--white);
+    padding: 30px;
+    margin: 0;
+    padding-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.5s;
+    z-index: 100;
+    transition: left 3s ease-in-out;
+}
+
+
+.menu-opened .vertical-menu {
+    left: 0;
+}
+
+.vertical-menu ul {
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#accordion2 {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: calc(100vh - 165px);
+    padding-bottom: 75px;
+    padding-left: 10px;
+}
+
+#accordion2 .ui-icon-circle-arrow-e2 {
+    background-image: url('./images/plus-svgrepo-com.svg');
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background-size: contain;
+    background-position: center;
+}
+
+#accordion2 .ui-icon-circle-arrow-s2 {
+    background-image: url('./images/minus-svgrepo-com\ \(1\).svg');
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background-size: contain;
+    background-position: center;
+}
+
+#accordion2 h3 {
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    cursor: pointer;
+    padding: 20px;
+    transition: all 0.5s;
+    padding-bottom: 0;
+}
+
+#accordion2 h3:hover {
+    color: var(--vertical-menu);
+}
+
+#accordion2 h3.ui-state-active {
+    color: var(--vertical-menu);
+}
+
+#accordion2 ul {
+    display: block;
+    padding-left: 9%;
+}
+
+#accordion2 ul a {
+    text-decoration: none;
+    font-family: var(--poppins);
+    color: var(--vertical-menu);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#accordion2 li{
+    margin-bottom: 10px;
 }
