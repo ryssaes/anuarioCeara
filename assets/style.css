@@ -418,6 +418,12 @@ ul {
     }
 }
 
+@media screen and (max-width: 375px){
+    .vertical-menu {
+        padding: 0 !important;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .footer figure {
         display: none;
