@@ -450,7 +450,7 @@ ul {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: left 0.5s;
     z-index: 100;
-    transition: left 3s ease-in-out;
+    transition: left 1s ease-in-out;
 }
 
 
