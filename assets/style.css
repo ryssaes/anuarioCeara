@@ -24,6 +24,7 @@
 
 .header figure {
     margin: 0px 0px;
+    cursor: pointer;
 }
 
 .menu img {
@@ -59,6 +60,10 @@
     align-items: center;
 }
 
+.nav-menu{
+    cursor: pointer;
+}
+
 .nav-bar h3 {
     color: var(--white);
     font-weight: 700;
@@ -81,7 +86,6 @@
     line-height: 22px;
     font-size: 16px;
 }
-
 .nav-bar li:hover{
     border-bottom: 2px solid white;
 }
@@ -161,6 +165,7 @@
     font-weight: 700;
     line-height: 26px;
     font-family: var(--poppins);
+    cursor: pointer;
 }
 
 #ui-id-2,
@@ -227,6 +232,7 @@
     justify-content: center;
     gap: 35px;
     padding-top: 20px;
+    cursor: pointer;
 }
 
 .footer-info {
@@ -264,6 +270,10 @@ ul {
     line-height: 20px;
 }
 
+.text-info a:hover{
+    text-decoration: underline;
+}
+
 .title-info {
     height: 43px;
     margin-bottom: 10px;
@@ -275,6 +285,10 @@ ul {
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
+}
+
+.title-info a:hover{
+    color: var(--red);
 }
 
 .text-info {
