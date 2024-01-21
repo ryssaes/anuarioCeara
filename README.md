@@ -39,6 +39,9 @@ Um projeto web desenvolvido utilizando HTML, CSS e JavaScript, com ênfase em re
 [![Media Query](https://img.shields.io/badge/Media_Query-CC6699?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
    - Recurso do CSS para criar layouts responsivos com base nas características do dispositivo.
 
+## 📸 Captura de Tela
+
+![Anuário do Ceará](imagens/captura.png)
 
 ## 📋 Requisitos
 
