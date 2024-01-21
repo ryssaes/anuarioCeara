@@ -41,7 +41,7 @@ Um projeto web desenvolvido utilizando HTML, CSS e JavaScript, com ênfase em re
 
 ## 📸 Captura de Tela
 
-![Anuário do Ceará](imagens/captura.png)
+![Anuário do Ceará](assets/images/foto.png)
 
 ## 📋 Requisitos
 
