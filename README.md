@@ -31,4 +31,4 @@ Um projeto web desenvolvido utilizando HTML, CSS e JavaScript, com ênfase em re
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://ryssaes/seu-usuario/anuario-ceara.git
+   git clone https://github.com/ryssaes/anuario-ceara.git
